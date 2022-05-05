@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "myApp": {
+      "name": "myApp",
+      "integrations": {
+        "cordova": {}
+      },
+      "type": "angular",
+      "root": "projects\\myApp"
+    }
+  }
+}
