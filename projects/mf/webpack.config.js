@@ -74,7 +74,15 @@ module.exports = {
           strictVersion: true,
           requiredVersion: "auto",
         },
-
+         "rxjs": {
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: 'auto',
+          includeSecondaries: true,
+        },
+         "@ngx-translate/core": { singleton: true, strictVersion: true, requiredVersion: 'auto', includeSecondaries: true },
+         "@ngx-translate/http-loader": { singleton: true, strictVersion: true, requiredVersion: 'auto', includeSecondaries: true },
+         "@angular/animations": { singleton: true, eager: true },
         ...sharedMappings.getDescriptors(),
       }),
     }),
